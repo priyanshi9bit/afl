@@ -1,0 +1,209 @@
+:root {
+    --background:#F7F9FF;
+    --f_button:#172578;
+    --back_white:#f7f9ff;
+}
+a{
+    text-decoration: none !important;
+}
+
+  
+.ant-drawer-body {
+    background-color: #172578;
+    
+}
+#my-content{
+display: none;
+}
+
+@media screen and (min-width: 0px) and (max-width: 731px) {
+    #my-content{ display: block; }  /* show it on smaller screen */
+  }
+ 
+.drawer{
+    height: 100vh;
+    width: 30% ;
+    background-color: var(--f_button) ;
+    overflow-y: auto ;
+    display: block ;
+    margin-top: 40px;
+    color: #F7F9FF;
+    font-weight: 600px !important;
+    position: fixed  ;
+}
+.drawer a{
+    text-decoration: none;
+    color: white;
+}
+.drawer a:hover{
+    color: white;
+}
+
+.left_sider{
+    position: fixed  ;
+    height: 100vh ;
+    width: 17% ;
+    background-color: var(--f_button) ;
+    overflow-y: auto;
+    display: block;
+}
+
+.left_sider a{
+    text-decoration: none;
+    color: white;
+}
+.left_sider a:hover{
+    color: white;
+}
+.right_content_layout{
+    /* padding-left: 240px; */
+    height: 100%;
+    overflow-y: auto;
+    position: absolute;
+    right:0px;
+    display: block;
+    top:0px;
+    width: 83%;
+    position: fixed;
+    background-color: var(--back_white);
+}
+@media screen and (max-width:1100px) {
+    .left_sider{
+        width: 24%;
+    }
+    .right_content_layout{
+        width: 76%;
+    }
+}
+.right_header{
+    background-color: white;
+}
+.main_layout_content{
+    background-color: white;
+    margin:24px;
+    padding:20px;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.089);
+    border-radius: 10px;
+}
+.sider_menu{
+    margin-top: 40px;
+    color: #F7F9FF;
+    font-weight: 400;
+}
+@media screen and (max-width:730px) {
+    .left_sider{
+        display: none;
+    }
+    .right_content_layout{
+        width: 100%;
+    }
+}
+.sider_menu div{
+    height: 45px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-left: 2px solid var(--f_button);
+    cursor: pointer;
+    transition: all ease-in-out 0.1s;
+}
+.sider_menu div.active{
+    background-color: #293579;
+    border-left: 2px solid white;
+}
+.sider_menu div:hover{
+    background-color: #202d74;
+    border-left: 2px solid white;
+}
+.sider_menu div:focus{
+
+    background-color: #293579;
+}
+.right_header_layout{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    height: 40px;
+    align-items: flex-end;
+    padding-left: 20px;
+    font-weight: 400;
+    padding-top: 5%;
+}
+.over_view_text{
+    font-weight: normal;
+    font-size: 24px;
+    height: 34px;
+    left: 0px;
+    right: 351px;
+    top: calc(50% - 34px/2 + 1px);
+    font-family: Rubik;
+    font-style: normal;      
+    line-height: 28px;
+    color: #0A1033;
+}
+.right_view_area{
+    display: flex;
+    width: 250px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.profile_disp{
+    /* width: 100px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.profile_disp div:nth-child(1){
+    margin-right: 10px;
+}
+.profile_disp div:nth-child(2){
+    width: 30px;
+    font-size: 14px;
+    height: 30px;
+    cursor: pointer;
+}
+.stick{
+    width: 2px;
+    background-color: #DCE1F9;
+    height: 20px;
+}
+.search_icon{
+    cursor: pointer;
+}
+.notifications{
+    cursor: pointer;
+}
+.stats_disp{
+    margin-top: 50px;
+}
+.popover_profile.visible{
+
+  visibility: visible;
+  opacity: 1;
+}
+.popover_profile{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.1s ease-in-out;
+    transition: all ease-in-out 0.1s;
+    position: fixed;
+    top: 50px;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.123);
+    border-radius: 5px;
+    right:40px;
+    font-size: 15px;
+    width: 200px;
+
+}
+.popover_profile .menu_item{
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    padding:10px;
+}
+.popover_profile .menu_item:hover{
+    
+    background-color: var(--back_white);
+}
