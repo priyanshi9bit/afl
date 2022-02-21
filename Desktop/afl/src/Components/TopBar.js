@@ -1,56 +1,52 @@
-import React from "react";
+import React, { Component } from "react";
+import { Switch ,Route} from 'react-router-dom';
 import Afl from '../Images/AFL.svg';
-import Avatar from 'antd/lib/avatar/avatar';
+// import { Avatar } from 'antd';
+import Avatar from '@mui/material/Avatar';
 import './MainComponents.css';
 import homePage from '../Images/homePage.svg';
 import machineDetails from '../Images/machineDetails.svg';
 import schedule from '../Images/schedule.svg';
 import contacts from '../Images/contacts.svg';
 import settings from '../Images/settings.svg';
+import Form from '../Form/Form';
+import Login from '../Login';
 
-function TopBar() {
+
+class TopBar extends Component {    
+    render() {
   return (
-    //  style={{height: '18px', top: 'calc(50% - 18px/2)',fontFamily: 'Rubik',fontStyle: 'normal',fontWeight: 'normal',fontSize: '14px',lineHeight: '17px',color: '#0A1033', letterSpacing:'0.25px'}}>Jonas Ferdinand </h5>
-    //     <Avatar src="https://joeschmoe.io/api/v1/random" />
-
     <div>
-      <div className="left_sider">
-          <div className="sider_menu">
-            
-            {/* <Link to="/"> */}
-              <div tabIndex={1} className='homePage'>
-                <img src={homePage} style={{ marginRight: "8px" }}></img>
-                Home Page
-              </div>
-            {/* </Link> */}
-            {/* <Link to="/"> */}
-            <div tabIndex={1} className='machineDetails'>
-                <img src={machineDetails} style={{ marginRight: "8px" }}></img>
-                Machine Details
-              </div>
-            {/* </Link> */}
-            {/* <Link to="/"> */}
-            <div tabIndex={1} className='schedule'>
-                <img src={schedule} style={{ marginRight: "8px" }}></img>
-                Schedule
-              </div>
-            {/* </Link> */}
-            {/* <Link to="/"> */}
-            <div tabIndex={1} className='contacts'>
-                <img src={contacts} style={{ marginRight: "8px" }}></img>
-                Connections
-              </div>
-            {/* </Link> */}
-            {/* <Link to="/"> */}
-            <div tabIndex={1} className='settings'>
-                <img src={settings} style={{ marginRight: "8px" }}></img>
-                Settings
-              </div>
-            {/* </Link> */}
-            
-            
-          </div>
+      {/* <div className="left_sider">
+      <div className="left_sider_info">
+      <Avatar sx={{width:'50%',height:'50%',marginLeft:'16px',marginTop:'54px'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
+      <p>Alexa Smith</p>
+      <span>alexasmith032@gmail.com </span>
+      </div>
+        <div className="sider_menu">   
+            <div tabIndex={1} className='homePage'>
+              <img src={homePage} style={{ marginRight: "8px" }}></img>
+              Home Page
+            </div>
+          <div tabIndex={1} className='machineDetails'>
+              <img src={machineDetails} style={{ marginRight: "8px" }}></img>
+              Machine Details
+            </div>
+          <div tabIndex={1} className='schedule'>
+              <img src={schedule} style={{ marginRight: "8px" }}></img>
+              Schedule
+            </div>
+          <div tabIndex={1} className='contacts'>
+              <img src={contacts} style={{ marginRight: "8px" }}></img>
+              Connections
+            </div>
+          <div tabIndex={1} className='settings'>
+              <img src={settings} style={{ marginRight: "8px" }}></img>
+              Settings
+            </div>         
+          
         </div>
+      </div> */}
       <div className="right_content_layout">
         <div className="right_header_layout">
           <div className="over_view_text">Overview</div>
@@ -112,9 +108,25 @@ function TopBar() {
             </div>
           </div>
         </div>
+        {/* <div className="main_layout">
+        <div className="main_layout_content">            
+            <div className="buyers">
+            <p>buyers</p>            
+            <h3>60</h3>
+            </div>            
+          </div>
+          <div className="main_layout_content">
+          <div className="availableMachines">
+            <p>Available Machines</p>            
+            <h3>16</h3>
+            </div>
+          </div>
+        </div> */}
+                
       </div>
     </div>
   );
+          }
 }
 
 export default TopBar;

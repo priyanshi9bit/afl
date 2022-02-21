@@ -1,0 +1,224 @@
+.billed{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.left{
+    margin-left: 10px;
+    width: 55%;
+}
+ol.progtrckr {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ol.progtrckr li {
+    display: inline-block;
+    text-align: center;
+    line-height: 3.5em;
+}
+
+ol.progtrckr[data-progtrckr-steps="3"] li { width: 24%; }
+
+ol.progtrckr li.progtrckr-done {
+    color: black;
+    border-bottom: 4px solid black;
+}
+ol.progtrckr li.progtrckr-todo {
+    color: silver; 
+    border-bottom: 4px solid silver;
+}
+
+ol.progtrckr li:after {
+    content: "\00a0\00a0";
+}
+ol.progtrckr li:before {
+    position: relative;
+    bottom: -2.5em;
+    float: left;
+    left: 50%;
+    line-height: 1em;
+}
+ol.progtrckr li.progtrckr-done:before {
+    content: "\2713";
+    background-color: black;
+    height: 2.2em;
+    width: 2.2em;
+    line-height: 2.2em;
+    border: none;
+    border-radius: 2.2em;
+}
+ol.progtrckr li.progtrckr-todo:before {
+    content: "\039F";
+    color: silver;
+    background-color: white;
+    font-size: 2.2em;
+    bottom: -1.2em;
+}
+
+.headings{
+    font-family: Sitara;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 39px;
+    color: #000000;
+}
+.inputs{
+    font-family: Sitara;
+    font-size: 24px;
+    line-height: 39px;
+    color: rgba(0, 0, 0, 0.42);
+}
+#name ,#cardNum ,#date, #cvv {
+    width: 70%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.btns{
+    display: inline-flex;
+}
+.back{
+    width: 130px;
+    height: 51px;
+    background: #FEFBFB;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+.cnfPay{
+    width: 370px;
+    height: 51px;
+    background: #8E9193;
+    border-radius: 11px;
+    font-family: Sitara;
+    font-size: 24px;
+    line-height: 39px;
+    color: #FEFBFB;
+}
+.tndC{
+    font-family: Sitara;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 29px;
+    color: #000000;
+    float: inline-end;
+    margin-top: 50px;
+}
+.right{
+    width: 45% ;
+    background: rgba(23, 37, 120, 0.9);
+    display: flex;
+    flex-direction: column;
+    float: right;
+    align-content: center;
+}
+.product_name{
+    font-family: Spectral SC;
+    font-size: 48px;
+    line-height: 73px;
+    color: #FFFFFF;    
+    margin-left: 20px;
+}
+.right>img{
+    width: 80%;
+    height: 40%;
+    margin-top: 7px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 50%;
+    margin-left: 90px;    
+}
+.offerTag{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+    margin-top: 18%;
+}
+.offers img{
+    margin-bottom: 50px;
+    margin-left: 12px;
+}
+.loyalty img{
+    margin-bottom: 50px;
+    margin-left: 12px;
+}
+.offers p{
+    border: 1px dashed #454545;
+    background-color: white;
+    box-sizing: border-box;
+    margin-left: 10%;
+    width: 240px;
+    height: 56px;
+    font-family: Rubik;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    color: #0F7F49;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding-left: 23px; */
+}
+.warrantyTag{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+    margin-top: 4%;
+}
+.loyaltyTag{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+    margin-top: 4%;
+}
+.loyalty p{
+    border: 1px dashed #8B91AB;
+    background-color: white;
+    box-sizing: border-box;
+    margin-left: 10%;
+    width: 240px;
+    height: 56px;
+    font-family: Rubik;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    color: #8B91AB;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.viewOffersLoyalty{
+    justify-content: center;
+    align-items: center;
+    padding: 15px 104px;
+    width: 91px;
+    height: 56px;
+    background: #8B91AB;
+    border-radius: 2px;
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.0125em;
+    color: #F9FCFA;
+    margin-left: 30px;
+    cursor: pointer;
+}
+@media screen and (max-width: 950px) {
+    .billed {
+      flex-wrap: wrap-reverse;
+    }
+    .right{
+        width: 100%;
+    }
+    .left{
+        width: 100%;
+    }
+  }

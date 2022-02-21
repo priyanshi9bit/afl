@@ -47,7 +47,28 @@ display: none;
     overflow-y: auto;
     display: block;
 }
+.left_sider_info p{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1px;
+    color: #F7F9FF;
+    padding-top: 19px;
+    margin-left: 25px;
 
+}
+.left_sider_info span{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.4px;
+    color: #DCE1F9;
+    margin-left: 25px;
+}
 .left_sider a{
     text-decoration: none;
     color: white;
@@ -78,12 +99,44 @@ display: none;
 .right_header{
     background-color: white;
 }
+.main_layout{
+    display: flex;
+}
 .main_layout_content{
     background-color: white;
     margin:24px;
     padding:20px;
     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.089);
-    border-radius: 10px;
+    border-radius: 10px; 
+    text-align: center; 
+    width: 22%;
+    cursor: pointer;
+}
+.main_layout_content p{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #172578;
+}
+.main_layout_content h3{
+    font-family: MuseoModerno;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 64px;
+    letter-spacing: 1px;
+    color: #172578;
+}
+.main_layout_content:hover{
+    border: 2px solid #172578;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.main_layout_content p:hover{
+    color: #172578;
 }
 .sider_menu{
     margin-top: 40px;
@@ -127,7 +180,7 @@ display: none;
     align-items: flex-end;
     padding-left: 20px;
     font-weight: 400;
-    padding-top: 5%;
+    margin-top: 23px;
 }
 .over_view_text{
     font-weight: normal;
