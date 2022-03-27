@@ -1,0 +1,244 @@
+.first{
+    height: 100vh;
+    background: url('../Images/Home.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.navbar li{
+    display: inline-block;
+    margin-top: 20px;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 24px 20px;
+    font-size: 18px;
+    /* font-family: ABeeZee; */
+    line-height: 39px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.navbar li a:hover, .navbar li a.active{
+    text-decoration: underline;
+    color:#E18F23;
+}
+.signup{
+    width: 127px;
+    height: 41px;
+    background: #FFFFFF;
+    border-radius: 52px;
+    font-family: Azo Sans;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #E18F23;
+}
+.signup:hover{
+    background: #E18F23;
+    color: white;
+    cursor: pointer;
+}
+.heading1{
+    font-family: Abhaya Libre ExtraBold;
+    font-weight: 800;
+    font-size: 49px;
+    line-height: 58px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background: rgba(203, 182, 182, 0.3);
+    border-radius: 23px;
+    width: 50%;
+}
+.heading2{
+    font-family: ABeeZee;
+    font-size: 49px;
+    line-height: 58px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-top: 50px;
+}
+.explore{
+    width: 189px;
+    height: 61px;
+    position: relative;
+    background: #F57009;
+    border-radius: 52px;
+    font-family: ABeeZee;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.searchbar{
+    margin: auto;
+    margin-top: 330px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;    
+    width: 60%;
+    /* W: 985px */
+    height: 173px;
+    justify-content: space-evenly;
+    padding: 40px 40px 40px 40px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 47px;
+}
+.searchbar> .head{
+    font-family: ABeeZee;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #010000;
+}
+.col > .info{
+    background: #F8F6F7;
+    border-radius: 10px;
+    margin-top: 10px;
+
+    font-family: ABeeZee;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #6D6B6C;
+}
+
+/* Popular machines */
+
+.info{
+    margin-left: 40px;
+}
+.info > .title{
+    font-family: Bebas Neue;
+    font-size: 64.715px;
+    line-height: 78px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #000000;
+}
+.info > .subtitle{
+    font-family: 'Be Vietnam';
+    font-weight: 700;
+    font-size: 16.36px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+color: #686363;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.card{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin-top: 20px;
+}
+.card > img{
+    /* left: 5.28%;
+    right: 75.69%; */
+    /* top: 19.72%;
+    bottom: 76.2%; */
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    z-index: 1;
+}
+.offer{
+    background: #F86C03;
+    border-radius: 11px;
+    width: 56px;
+    height: 23px;
+    font-family: Roboto;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFFFFF;    
+    transform: translate(630%, -1300%);
+    -ms-transform: translate(-50%, -50%);
+}
+.card > .p1{
+    padding: 10px 10px 10px 10px;
+    font-family: Roboto;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+}
+.p2{
+    padding: 10px 10px 10px 10px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 20.3226px;
+    line-height: 24px;
+    color: #000000;
+}
+.details{
+    padding: 10px 10px 10px 10px;
+    font-family: Be Vietnam;
+    font-size: 9.36px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #000000;
+}
+.location{
+    padding: 10px 10px 10px 10px;
+    font-family: Be Vietnam;
+    font-size: 9.36px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #6A6666;
+    float: left;
+}
+.arrows{
+    float: right;
+    margin-right: 90px;
+}
+.blackarrow{
+    background: #1C1A2D;
+    border-radius: 26px 26px;
+}
+.whitearrow{
+    margin-left: 10px;
+    border-radius: 26px 26px;
+}
+.viewAll{
+    height: 65px;
+    width: 210px;
+    border-radius: 28px;
+    border-color: #f36f07;
+    background-color: white;
+    font-family: 'Be Vietnam';
+    font-weight: 600;
+    font-size: 22.36px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #F86C03;
+    float: right;
+    margin-right: 4%;
+    margin-top: -1%;
+}

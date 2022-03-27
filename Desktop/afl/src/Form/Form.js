@@ -1,5 +1,5 @@
 import React from 'react';
-import './Form.css';
+import style from './Form.css';
 import Afl from '../Images/AFL.svg';
 import Tractor from '../Images/tractor.png';
 import CloudUploadOutlinedIcon from '@mui/icons-material/CloudUploadOutlined';
@@ -10,9 +10,9 @@ import offers from "../Images/offers.svg";
 
 function Form() {
     return (
-        <div className="form">
-            <div className="left">
-                <div className="heading">
+        <div className='form'>
+            <div className='left'>
+                <div className='heading'>
                     <p>Form</p>
                 </div>
                 <div className="btns">
@@ -29,8 +29,8 @@ function Form() {
                         Invoice of the vehicle
                     </button>
                 </div>
-                <div className="details">
-                    <div className="col-1">
+                <div className={style.details}>
+                    <div className={style.col-1}>
                         <img src={Tractor} />
                         <br />
                         <button className='upload'>
@@ -43,7 +43,7 @@ function Form() {
                             Submit
                         </div>
                     </div>
-                    <div className="col-2">
+                    <div className={style.col-2}>
                         <div className="offerTag">
                             <div className="offers">
                                <p><img src={offers} /> Offers 40% Available</p>
